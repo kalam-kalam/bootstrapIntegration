@@ -1,0 +1,325 @@
+$blueDuck: #02918c;
+$mustard: #cfc91d;
+$lightGrey: #d9dbdb;
+$greyFont: #7e8287;
+$extraBold: 600;
+$regularWeight: 200;
+$lineHeight: 33px;
+$lightBlack: #0b0b0b;
+$black: #000000;
+$screen-sm-min: 1200;
+
+// GENERAL
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: $greyFont;
+}
+
+.container {
+  width: 100%;
+  padding: 0px 50px 0px 50px;
+  margin: 0px;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: 68px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-weight: $extraBold;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 46px;
+  color: $blueDuck;
+}
+
+p {
+  margin-bottom: 30px;
+  line-height: 36px;
+}
+
+.iconeSprite {
+  background: url('/assets/img/sprite_hbstudio.png') no-repeat top left;
+  width: 32px;
+  height: 32px;
+}
+
+// END GENERAL
+
+// MENU
+#menu {
+  background-color: $blueDuck;
+  nav {
+    margin-bottom: 0px;
+  }
+  #navbarCollapse ul li {
+    margin-right: 35px;
+    a {
+      font-size: 12px;
+      font-weight: $extraBold;
+    }
+  }
+  #navbarCollapse ul li a:hover {
+    color: $blueDuck;
+    background-color: white;
+    cursor: pointer;
+  }
+  #burger {
+    border: solid 1px transparent;
+    span {
+      background: white;
+    }
+  }
+  .navbar-brand {
+    font-size: 26px;
+    font-weight: $extraBold;
+    color: $mustard;
+    span {
+      color: white;
+    }
+  }
+}
+//================END MENU
+
+//================HOME
+#home_section {
+  background-color: black;
+  height: 729px;
+  margin-top: 50px;
+}
+
+#background_header {
+  padding-top: 205px;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/img/back_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  h1 {
+    margin-bottom: 0px;
+  }
+  p, h1 {
+    width: 100%;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+  }
+  h1 > span {
+    display: block;
+    font-size: 30px;
+    font-weight: $regularWeight;
+  }
+  #mustach_container {
+    text-align: center;
+    margin-bottom: 120px;
+  }
+}
+
+.big_yellow_button {
+  width: 200px;
+  height: 52px;
+  background-color: $mustard;
+  border: none;
+  font-weight: $extraBold;
+  a {
+    color: black;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $blueDuck;
+  }
+  padding: 15px;
+  text-align: center;
+}
+
+//====================END HOME
+
+//====================SECTION ABOUT ME
+
+#about {
+  padding-top: 100px;
+  p {
+    text-align: center;
+    span {
+      font-size: 23px;
+      font-weight: $extraBold;
+    }
+  }
+}
+
+#about_me_intro {
+  margin-bottom: 100px;
+}
+
+.icone_bloc {
+  height: 290px;
+  border-right: solid 1px $lightGrey;
+}
+
+.icone_bloc:last-child {
+  border: none;
+}
+
+#pen_icone {
+  background-position: 0 0;
+}
+
+#ordi_icone {
+  background-position: -42px 0;
+}
+
+#parametres_icone {
+  background-position: -84px 0;
+}
+
+#light_icone {
+  background-position: -126px 0;
+  width: 31px;
+  height: 33px;
+}
+
+//=================END SECTION ABOUT ME
+
+//=================SECTION CONTACT ME
+#contact {
+  padding-top: 100px;
+  p {
+    text-align: center;
+  }
+}
+
+#contact_bottom {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $lightBlack;
+  form {
+    label {
+      margin-bottom: 20px;
+      font-weight: 100;
+    }
+    .form-control {
+      font-size: 16px;
+    }
+    .form-group {
+      text-align: center;
+      margin-bottom: 70px;
+      color: $greyFont;
+    }
+    input {
+      text-align: center;
+      width: 50%;
+      background: $lightBlack;
+      border: none;
+      border-bottom: solid 0.2px $lightGrey;
+      color: white;
+      border-radius: 0%;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    textarea {
+      width: 80%;
+      height: 94px;
+      background: $lightBlack;
+      border: none;
+      border-bottom: solid 0.2px $lightGrey;
+      border-top: solid 0.2px $lightGrey;
+      border-radius: 0%;
+    }
+    button {
+      color: black;
+    }
+    button:hover {
+      color: $blueDuck;
+    }
+  }
+
+}
+
+#name:focus {
+  border: solid 2px $blueDuck;
+  background-color: white;
+  color: black;
+}
+
+#email:focus {
+  border: solid 2px $blueDuck;
+  background-color: white;
+  color: black;
+}
+
+#message:focus {
+  border: solid 2px $blueDuck;
+  background-color: white;
+  color: black;
+}
+
+//======================SECTION CONTACT ME
+
+//======================FOOTER
+footer {
+  height: 72px;
+  padding-top: 23px;
+  background: black;
+  p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+//======================END FOOTER
+
+/*==================================*
+=           MEDIA QUERIES
+/*==================================*/
+
+// TAB & UNDER
+@media(max-width: 1200px) {
+  h1 {
+    font-size: 52px;
+  }
+  .icone_bloc {
+    border: none;
+    padding-right: 52px;
+    padding-left: 52px;
+  }
+  .container {
+    padding-right: 100px;
+    padding-left: 100px;
+
+  }
+}
+
+//PHONE & UNDER
+@media(max-width: 576px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+
+  }
+  .iconeSprite {
+    margin-bottom: 40px;
+  }
+  .icone_bloc {
+    padding-right: 0px;
+    padding-left: 0px;
+    border-bottom: solid 0.8px $lightGrey;
+    margin-bottom: 30px;
+    height: 355px;
+  }
+}
